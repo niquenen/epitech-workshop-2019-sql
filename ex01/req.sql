@@ -5,4 +5,3 @@ WHERE (
 	(`last_name` IS NOT NULL) AND
 	(`username` LIKE '%y%')
 ) ORDER BY `id` DESC;
-
