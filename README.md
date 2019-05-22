@@ -7,7 +7,7 @@ Index de la documentation de MariaDB :
 Manipulation de la donnée (SELECT, INSERT, UPDATE, ...) :
 - https://mariadb.com/kb/en/library/data-manipulation/
 
-Exemple d'une requête SQL :
+Exemple d’une requête SQL :
 ```SQL
 SELECT column_1, column_2
 FROM table_name
@@ -18,7 +18,7 @@ WHERE (
 ```
 
 ## Exercice n°1
-- Récupérer une liste d'utilisateurs contenant le caractère `y` dans le pseudonyme.
+- Récupérer une liste d’utilisateurs contenant le caractère `y` dans le pseudonyme.
 - Les colonnes sélectionnées sont : `id` et `username`.
 - La colonne `id` doit être triée par ordre décroissant.
 
@@ -41,7 +41,7 @@ Résultat attendu :
 | <kbd>10</kbd> |
 
 ## Exercice n°3
-- Récuperer toutes les tâches des utilisateurs avec son id, son pseudonyme et le contenu de la tâche.
+- Récupérer toutes les tâches des utilisateurs avec son id, son pseudonyme et le contenu de la tâche.
 - Trier le résultat par ordre croissant en fonction du champ `id`.
 - Aide : utiliser une jointure entre la table `users` et `tasks`.
 - Aide : quelle est la différence entre `INNER JOIN` et `LEFT JOIN` ?
@@ -90,6 +90,6 @@ Résultat attendu :
 | <kbd>14</kbd> | <kbd>1</kbd> |
 
 ## Exercice n°5
-- Créer un nouveau utilisateur dans la table `users`.
-- Mettre à jour les informations d'un utilisateur.
+- Créer un nouvel utilisateur dans la table `users`.
+- Mettre à jour les informations d’un utilisateur.
 - Supprimer un utilisateur.
