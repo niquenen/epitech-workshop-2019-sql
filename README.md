@@ -44,7 +44,7 @@ Résultat attendu :
 - Récuperer toutes les tâches des utilisateurs avec son id, son pseudonyme et le contenu de la tâche.
 - Trier le résultat par ordre croissant en fonction du champ `id`.
 - Aide : utiliser une jointure entre la table `users` et `tasks`.
-- Aide : quest est la différence entre un `INNER JOIN` et un `LEFT JOIN` ?
+- Aide : quelle est la différence entre `INNER JOIN` et `LEFT JOIN` ?
 
 Résultat attendu :
 
@@ -88,3 +88,8 @@ Résultat attendu :
 | <kbd>12</kbd> | <kbd>1</kbd> |
 | <kbd>13</kbd> | <kbd>0</kbd> |
 | <kbd>14</kbd> | <kbd>1</kbd> |
+
+## Exercice n°5
+- Créer un nouveau utilisateur dans la table `users`.
+- Mettre à jour les informations d'un utilisateur.
+- Supprimer un utilisateur.
