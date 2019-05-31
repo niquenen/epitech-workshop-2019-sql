@@ -12,8 +12,8 @@ Exemple d'une requête SQL :
 SELECT column_1, column_2
 FROM table_name
 WHERE (
-	(`column_1` IS NOT NULL) AND
-	(`column_2` LIKE 'y%')
+	(column_1 IS NOT NULL) AND
+	(column_2 LIKE 'y%')
 );
 ```
 
