@@ -1,4 +1,9 @@
 # cmd: "docker-compose --project-name epitech_workshop -f docker-compose.yml up"
+# /!\ WARNING /!\
+# With PHPMyAdmin enter "db" in the input "server" like:
+#   * Server: db
+#   * Username: root
+#   * Password: root
 version: '3.1'
 
 services:
