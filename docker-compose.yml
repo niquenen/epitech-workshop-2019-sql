@@ -1,0 +1,30 @@
+# cmd: "docker-compose --project-name epitech_workshop -f docker-compose.yml up"
+version: '3.1'
+
+services:
+
+  db:
+    image: mariadb
+    restart: always
+    container_name: epitech_mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: epitech_phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+    links:
+      - db
+    restart: always
+    ports:
+      - 8080:80
+
+#  adminer:
+#    image: adminer
+#    restart: always
+#    container_name: epitech_adminer
+#    ports:
+#      - 8080:8080
