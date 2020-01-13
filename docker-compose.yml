@@ -10,22 +10,24 @@ services:
 
   db:
     image: mariadb
-    restart: always
     container_name: epitech_mariadb
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: epitech_phpmyadmin
+    restart: always
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=db
+    ports:
+      - "8080:80"
     links:
       - db
-    restart: always
-    ports:
-      - 8080:80
+    depends_on:
+      - db
 
 #  adminer:
 #    image: adminer
