@@ -1,11 +1,15 @@
 # Epitech Workshop SQL
-Avant de commencer les exercices voici quelques liens utiles :
+Avant de commencer les exercices voici quelques liens utiles.
+
+Comment fonctionne une base de données :
+- [How a SQL Database Engine Works](https://medium.com/@grepdennis/how-a-sql-database-engine-works-c67364e5cdfd)
+- [Query Processing Architecture Guide](https://docs.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver15)
 
 Index de la documentation de MariaDB :
-- https://mariadb.com/kb/en/library/documentation/
+- [https://mariadb.com/kb/en/library/documentation/](https://mariadb.com/kb/en/library/documentation/)
 
 Manipulation de la donnée (SELECT, INSERT, UPDATE, ...) :
-- https://mariadb.com/kb/en/library/data-manipulation/
+- [https://mariadb.com/kb/en/library/data-manipulation/](https://mariadb.com/kb/en/library/data-manipulation/)
 
 Exemple d’une requête SQL :
 ```SQL
