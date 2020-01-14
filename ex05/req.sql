@@ -1,7 +1,10 @@
 /* STEP 1 - Create a new user */
-INSERT INTO users (username, first_name, last_name)
-VALUES ('test', 'my_name', 'my_last_name'),
-	('test2', 'my_name_2', 'my_last_name_2');
+INSERT INTO `users` (`username`, `first_name`, `last_name`) VALUES
+(
+	'user_x',
+	'my_first_name',
+	'my_last_name'
+);
 
 /* STEP 2 - Update the last user */
 SET @id = (

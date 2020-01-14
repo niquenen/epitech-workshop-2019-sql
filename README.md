@@ -34,7 +34,6 @@ Résultat attendu :
 | <kbd>10</kbd>	| user_10 |
 | <kbd>2</kbd>	| user_2 |
 
-
 ## Exercice n°2
 - Compter le nombre d'utilisateurs ayant une tâche dans la table `tasks`.
 - Aide : regarder dans la documentation `COUNT`, `DISTINCT` et `AS`.
@@ -46,34 +45,35 @@ Résultat attendu :
 | <kbd>10</kbd> |
 
 ## Exercice n°3
-- Récupérer toutes les tâches des utilisateurs avec son id, son pseudonyme et le contenu de la tâche.
-- Trier le résultat par ordre croissant en fonction du champ `id`.
+- Récupérer les tâches des utilisateurs et sélectionner les colonnes :
+  - `id`
+  - `username`
+  - `content`
+- Trier le résultat par ordre croissant en fonction de la colonne `id`.
 - Aide : utiliser une jointure entre la table `users` et `tasks`.
-- Aide : quelle est la différence entre `INNER JOIN` et `LEFT JOIN` ?
 
 Résultat attendu :
 
 | **id** | **username** | **content** |
 | :---: | :---: | :---: |
-| <kbd>1</kbd> | tchalla | Lorem ipsum dolor sit amet, ... |
-| <kbd>1</kbd> | tchalla | Lorem ipsum dolor sit amet, ... |
-| <kbd>2</kbd> | Hanoxis | Lorem ipsum dolor sit amet, ... |
-| <kbd>5</kbd> | toN_Ton | Lorem ipsum dolor sit amet, ... |
-| <kbd>7</kbd> | Bryas | Lorem ipsum dolor sit amet, ... |
-| <kbd>8</kbd> | ermont | Lorem ipsum dolor sit amet, ... |
-| <kbd>9</kbd> | Marlioz | Lorem ipsum dolor sit amet, ... |
-| <kbd>10</kbd> | Faubourg_Saint_Honore | Lorem ipsum dolor sit amet, ... |
-| <kbd>11</kbd> | Fou_Lcamp | Lorem ipsum dolor sit amet, ... |
-| <kbd>11</kbd> | Fou_Lcamp | Lorem ipsum dolor sit amet, ... |
-| <kbd>11</kbd> | Fou_Lcamp | Lorem ipsum dolor sit amet, ... |
-| <kbd>12</kbd> | Jean_Neymar | Lorem ipsum dolor sit amet, ... |
-| <kbd>14</kbd> | Ymbrella | Lorem ipsum dolor sit amet, ... |
+| <kbd>1</kbd> | user_1 | Lorem ipsum dolor sit amet, ... |
+| <kbd>1</kbd> | user_1 | Lorem ipsum dolor sit amet, ... |
+| <kbd>2</kbd> | user_2 | Lorem ipsum dolor sit amet, ... |
+| <kbd>5</kbd> | user_5 | Lorem ipsum dolor sit amet, ... |
+| <kbd>7</kbd> | user_7 | Lorem ipsum dolor sit amet, ... |
+| <kbd>8</kbd> | user_8 | Lorem ipsum dolor sit amet, ... |
+| <kbd>9</kbd> | user_9 | Lorem ipsum dolor sit amet, ... |
+| <kbd>10</kbd> | user_10 | Lorem ipsum dolor sit amet, ... |
+| <kbd>11</kbd> | user_11 | Lorem ipsum dolor sit amet, ... |
+| <kbd>11</kbd> | user_11 | Lorem ipsum dolor sit amet, ... |
+| <kbd>11</kbd> | user_11 | Lorem ipsum dolor sit amet, ... |
+| <kbd>12</kbd> | user_12 | Lorem ipsum dolor sit amet, ... |
+| <kbd>14</kbd> | user_14 | Lorem ipsum dolor sit amet, ... |
 
 ## Exercice n°4
-
 - Compter le nombre de tâches par utilisateur, le nombre de tâches doit être stocké dans une colonne `total`.
-- Aide : il faut utiliser une jointure entre la table `users` et `tasks`.
-- Aide : https://mariadb.com/kb/en/library/group-by/
+- Aide : quelle est la différence entre `INNER JOIN` et `LEFT JOIN` ?
+- Aide : (https://mariadb.com/kb/en/library/group-by/)[https://mariadb.com/kb/en/library/group-by/]
 
 Résultat attendu :
 
