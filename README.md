@@ -22,8 +22,8 @@ WHERE (
 ```
 
 ## Exercice n°1
-- Récupérer une liste d’utilisateurs contenant le caractère `y` dans le pseudonyme.
-- Les colonnes sélectionnées sont : `id` et `username`.
+- Sélectionner et afficher les colonnes `id` et `username`.
+- Récupérer une liste d’utilisateurs contenant le caractère `s` dans le nom.
 - La colonne `id` doit être triée par ordre décroissant.
 
 Résultat attendu :

@@ -1,5 +1,5 @@
 SELECT id, username
 FROM users
 WHERE (
-	(username LIKE '%y%')
+	(last_name LIKE '%s%')
 ) ORDER BY id DESC;
