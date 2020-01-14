@@ -28,10 +28,3 @@ services:
       - db
     depends_on:
       - db
-
-#  adminer:
-#    image: adminer
-#    restart: always
-#    container_name: epitech_adminer
-#    ports:
-#      - 8080:8080
