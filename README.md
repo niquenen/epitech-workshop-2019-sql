@@ -78,7 +78,7 @@ Résultat attendu :
 ## Exercice n°4
 - Compter le nombre de tâches par utilisateur, le nombre de tâches doit être stocké dans une colonne `total`.
 - Aide : quelle est la différence entre `INNER JOIN` et `LEFT JOIN` ?
-- Aide : (https://mariadb.com/kb/en/library/group-by/)[https://mariadb.com/kb/en/library/group-by/]
+- Aide : [https://mariadb.com/kb/en/library/group-by/](https://mariadb.com/kb/en/library/group-by/)
 
 Résultat attendu :
 
