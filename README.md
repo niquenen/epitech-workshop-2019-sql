@@ -30,15 +30,14 @@ Résultat attendu :
 
 | **id** | **username** |
 | :---: | :---: |
-| <kbd>14</kbd> | Ymbrella |
-| <kbd>13</kbd> | Fnyc |
-| <kbd>12</kbd> | Jean_Neymar |
-| <kbd>7</kbd> | Bryas |
-| <kbd>6</kbd> | youpi |
+| <kbd>11</kbd> | user_11 |
+| <kbd>10</kbd>	| user_10 |
+| <kbd>2</kbd>	| user_2 |
+
 
 ## Exercice n°2
 - Compter le nombre d'utilisateurs ayant une tâche dans la table `tasks`.
-- Aide : regarder dans la documentation `DISTINCT` et `AS`.
+- Aide : regarder dans la documentation `COUNT`, `DISTINCT` et `AS`.
 
 Résultat attendu :
 
