@@ -1,0 +1,8 @@
+# Ignore all.
+*
+
+# Exceptions.
+!*.sql
+!*.yml
+!.gitignore
+!.gitattributes

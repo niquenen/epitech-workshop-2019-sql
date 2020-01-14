@@ -21,6 +21,11 @@ WHERE (
 );
 ```
 
+## Exercice n°0
+Vous pouvez utiliser Docker pour créer un conteneur MariaDB.
+Un fichier `docker compose` est disponible à cette adresse :
+- (https://pastebin.com/kPkqn27v)[https://pastebin.com/kPkqn27v]
+
 ## Exercice n°1
 - Sélectionner et afficher les colonnes `id` et `username`.
 - Récupérer une liste d’utilisateurs contenant le caractère `s` dans le nom.
