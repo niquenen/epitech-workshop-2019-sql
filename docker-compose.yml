@@ -10,8 +10,11 @@ services:
     image: mariadb
     container_name: epitech_mariadb
     restart: always
+    command: --init-file /data/application/db.sql
     environment:
       MYSQL_ROOT_PASSWORD: root
+    volumes:
+        - ./db.sql:/data/application/db.sql
     networks:
       - workshop
 
