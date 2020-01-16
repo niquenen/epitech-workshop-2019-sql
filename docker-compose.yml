@@ -1,7 +1,5 @@
 # cmd: "docker-compose --project-name epitech_workshop -f docker-compose.yml up"
 # /!\ WARNING /!\
-# With PHPMyAdmin enter "db" in the input "server" like:
-#   * Server: db
 #   * Username: root
 #   * Password: root
 version: '3.1'
@@ -14,17 +12,25 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
+    networks:
+      - workshop
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: epitech_phpmyadmin
     restart: always
     environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=db
+      PMA_ARBITRARY: 0
+      PMA_HOST: db
     ports:
       - "8080:80"
     links:
       - db
     depends_on:
       - db
+    networks:
+      - workshop
+
+networks:
+  workshop:
+    driver: bridge
