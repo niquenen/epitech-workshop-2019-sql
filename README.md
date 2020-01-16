@@ -22,9 +22,12 @@ WHERE (
 ```
 
 ## Exercice n°0
-Vous pouvez utiliser Docker pour créer un conteneur MariaDB.
+Avant de commencer les exercices vous pouvez télécharger le projet [depuis cette page](https://github.com/niquenen/epitech_workshop_sql/releases/tag/v1.0).
+
+Sinon Vous pouvez utiliser Docker pour créer un conteneur MariaDB.
 Un fichier `docker compose` est disponible à cette adresse :
 - [https://pastebin.com/kPkqn27v](https://pastebin.com/kPkqn27v)
+Vous devez [utiliser un script SQL](https://raw.githubusercontent.com/niquenen/epitech_workshop_sql/master/db.sql) pour initialiser la base de données.
 
 ## Exercice n°1
 - Sélectionner et afficher les colonnes `id` et `username`.
