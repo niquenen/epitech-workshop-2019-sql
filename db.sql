@@ -1,5 +1,6 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET SQL_MODE = 'NO_AUTO_VALUE_ON_ZERO';
+SET time_zone = '+00:00';
+
 CREATE DATABASE IF NOT EXISTS `epitech_workshop`
 	DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
@@ -167,13 +168,11 @@ INSERT INTO `users` (`id`, `username`, `first_name`, `last_name`) VALUES
 	NULL
 );
 
-
 ALTER TABLE `tasks`
 	ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `users`
 	ADD PRIMARY KEY (`id`);
-
 
 ALTER TABLE `tasks`
 	MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
