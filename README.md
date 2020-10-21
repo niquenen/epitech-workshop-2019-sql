@@ -45,6 +45,7 @@ Résultat attendu :
 
 ## Exercice n°2
 - Compter le nombre d'utilisateurs ayant une tâche dans la table `tasks`.
+- Nommer la colonne de résultat en `total`.
 - Aide : regarder dans la documentation `COUNT`, `DISTINCT` et `AS`.
 
 Résultat attendu :
@@ -59,7 +60,7 @@ Résultat attendu :
   - `username`
   - `content`
 - Trier le résultat par ordre croissant en fonction de la colonne `id`.
-- Aide : utiliser une jointure entre la table `users` et `tasks`.
+- Aide : utiliser une jointure `INNER JOIN` entre la table `users` et `tasks`.
 
 Résultat attendu :
 
@@ -80,7 +81,8 @@ Résultat attendu :
 | <kbd>14</kbd> | user_14 | Lorem ipsum dolor sit amet, ... |
 
 ## Exercice n°4
-- Compter le nombre de tâches par utilisateur, le nombre de tâches doit être stocké dans une colonne `total`.
+- Compter le nombre de tâches de tous les utilisateurs.
+- Le nombre de tâches doit être stocké dans une colonne `total`
 - Aide : quelle est la différence entre `INNER JOIN` et `LEFT JOIN` ?
 - Aide : [https://mariadb.com/kb/en/library/group-by/](https://mariadb.com/kb/en/library/group-by/)
 
