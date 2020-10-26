@@ -22,9 +22,9 @@ WHERE
 ```
 
 ## Exercice n°0
-Avant de commencer les exercices vous pouvez télécharger le projet [depuis cette page](https://github.com/niquenen/epitech_workshop_sql/releases/tag/v1.0).
+Avant de commencer les exercices vous pouvez télécharger le projet [depuis la page des versions](https://github.com/niquenen/epitech_workshop_sql/releases/tag/v1.0).
 
-Sinon Vous pouvez utiliser Docker pour créer un conteneur MariaDB.
+Vous pouvez également utiliser Docker pour créer un conteneur MariaDB.
 Un fichier `docker compose` est disponible à cette adresse :
 - [https://pastebin.com/kPkqn27v](https://pastebin.com/kPkqn27v)
 
@@ -34,6 +34,7 @@ Vous devez [utiliser un script SQL](https://raw.githubusercontent.com/niquenen/e
 - Sélectionner et afficher les colonnes `id` et `username`.
 - Récupérer une liste d’utilisateurs contenant le caractère `s` dans le nom.
 - La colonne `id` doit être triée par ordre décroissant.
+- Aide : regarder dans la documentation [`LIKE`](https://sql.sh/cours/where/like).
 
 Résultat attendu :
 
@@ -46,7 +47,7 @@ Résultat attendu :
 ## Exercice n°2
 - Compter le nombre d'utilisateurs ayant une tâche dans la table `tasks`.
 - Nommer la colonne de résultat en `total`.
-- Aide : regarder dans la documentation `COUNT`, `DISTINCT` et `AS`.
+- Aide : regarder dans la documentation [`COUNT`](https://mariadb.com/kb/en/count/), [`DISTINCT`](https://sql.sh/cours/distinct) et [`AS`](https://sql.sh/cours/alias).
 
 Résultat attendu :
 
@@ -56,11 +57,11 @@ Résultat attendu :
 
 ## Exercice n°3
 - Récupérer les tâches des utilisateurs et sélectionner les colonnes :
-  - `id`
+  - `id` (identifiant unique d’un utilisateur)
   - `username`
   - `content`
 - Trier le résultat par ordre croissant en fonction de la colonne `id`.
-- Aide : utiliser une jointure `INNER JOIN` entre la table `users` et `tasks`.
+- Aide : utiliser une jointure [`INNER JOIN`](https://sql.sh/cours/jointures/inner-join) entre la table `users` et `tasks`.
 
 Résultat attendu :
 
@@ -83,8 +84,8 @@ Résultat attendu :
 ## Exercice n°4
 - Compter le nombre de tâches de tous les utilisateurs.
 - Le nombre de tâches doit être stocké dans une colonne `total`
-- Aide : quelle est la différence entre `INNER JOIN` et `LEFT JOIN` ?
-- Aide : [https://mariadb.com/kb/en/library/group-by/](https://mariadb.com/kb/en/library/group-by/)
+- Aide : quelle est la différence entre une jointure qui utilise [`INNER JOIN`](https://sql.sh/cours/jointures/inner-join) et [`LEFT JOIN`](https://sql.sh/cours/jointures/left-join) ?
+- Aide : regarder dans la documentation [`GROUP BY`](https://mariadb.com/kb/en/library/group-by/)
 
 Résultat attendu :
 
@@ -109,3 +110,4 @@ Résultat attendu :
 - Créer un nouvel utilisateur dans la table `users`.
 - Mettre à jour les informations d’un utilisateur.
 - Supprimer un utilisateur.
+- Aide : regarder dans la documentation [`INSERT`](https://mariadb.com/kb/en/insert/), [`UPDATE`](https://mariadb.com/kb/en/update/) et [`DELETE`](https://mariadb.com/kb/en/delete/)
