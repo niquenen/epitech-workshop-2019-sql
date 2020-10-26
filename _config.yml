@@ -1,3 +1,4 @@
 theme: jekyll-theme-modernist
 title: EPITECH WORKSHOP - DÉCOUVRIR SQL
 description: Découvrez le langage SQL à travers quelques exercices.
+show_downloads: true
