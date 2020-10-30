@@ -21,6 +21,8 @@ WHERE
 	column_2 LIKE 'y%'
 ```
 
+[`SELECT`](https://sql.sh/cours/select) et [`FROM`](https://sql.sh/cours/select) sont des instructions basiques qui permettent de sélectionner des données provenant d’une table. L’instruction [`WHERE`](https://sql.sh/cours/where) permet d’isoler des données lors de l’exécution d’une requête.
+
 ## Exercice n°0
 Avant de commencer les exercices vous pouvez télécharger le projet [depuis la page des versions](https://github.com/niquenen/epitech_workshop_sql/releases/tag/v1.0).
 
@@ -31,10 +33,11 @@ Un fichier `docker compose` est disponible à cette adresse :
 Vous devez [utiliser un script SQL](https://raw.githubusercontent.com/niquenen/epitech_workshop_sql/master/db.sql) pour initialiser la base de données du workshop.
 
 ## Exercice n°1
-- Sélectionner et afficher les colonnes `id` et `username`.
-- Récupérer une liste d’utilisateurs contenant le caractère `s` dans le nom.
-- La colonne `id` doit être triée par ordre décroissant.
-- Aide : regarder dans la documentation [`LIKE`](https://sql.sh/cours/where/like).
+- Sélectionner et afficher les colonnes `id` et `username`
+- Récupérer une liste d’utilisateurs contenant le caractère `s` dans le nom
+- La colonne `id` doit être triée par ordre décroissant
+- Aide : regarder dans la documentation [`LIKE`](https://sql.sh/cours/where/like)
+- Aide : regarder dans la documentation [`ORDER BY`](https://sql.sh/cours/order-by)
 
 Résultat attendu :
 
@@ -45,9 +48,9 @@ Résultat attendu :
 | <kbd>2</kbd>	| user_2 |
 
 ## Exercice n°2
-- Compter le nombre d'utilisateurs ayant une tâche dans la table `tasks`.
-- Nommer la colonne de résultat en `total`.
-- Aide : regarder dans la documentation [`COUNT`](https://mariadb.com/kb/en/count/), [`DISTINCT`](https://sql.sh/cours/distinct) et [`AS`](https://sql.sh/cours/alias).
+- Compter le nombre d’utilisateurs ayant une tâche dans la table `tasks`
+- Nommer la colonne de résultat en `total`
+- Aide : regarder dans la documentation [`COUNT`](https://mariadb.com/kb/en/count/), [`DISTINCT`](https://sql.sh/cours/distinct) et [`AS`](https://sql.sh/cours/alias)
 
 Résultat attendu :
 
@@ -60,8 +63,8 @@ Résultat attendu :
   - `id` (identifiant unique d’un utilisateur)
   - `username`
   - `content`
-- Trier le résultat par ordre croissant en fonction de la colonne `id`.
-- Aide : utiliser une jointure [`INNER JOIN`](https://sql.sh/cours/jointures/inner-join) entre la table `users` et `tasks`.
+- Trier le résultat par ordre croissant en fonction de la colonne `id`
+- Aide : utiliser une jointure [`INNER JOIN`](https://sql.sh/cours/jointures/inner-join) entre la table `users` et `tasks`
 
 Résultat attendu :
 
@@ -82,7 +85,7 @@ Résultat attendu :
 | <kbd>14</kbd> | user_14 | Lorem ipsum dolor sit amet, ... |
 
 ## Exercice n°4
-- Compter le nombre de tâches de tous les utilisateurs.
+- Compter le nombre de tâches de tous les utilisateurs
 - Le nombre de tâches doit être stocké dans une colonne `total`
 - Aide : quelle est la différence entre une jointure qui utilise [`INNER JOIN`](https://sql.sh/cours/jointures/inner-join) et [`LEFT JOIN`](https://sql.sh/cours/jointures/left-join) ?
 - Aide : regarder dans la documentation [`GROUP BY`](https://mariadb.com/kb/en/library/group-by/)
@@ -107,7 +110,19 @@ Résultat attendu :
 | <kbd>14</kbd> | <kbd>1</kbd> |
 
 ## Exercice n°5
-- Créer un nouvel utilisateur dans la table `users`.
-- Mettre à jour les informations d’un utilisateur.
-- Supprimer un utilisateur.
-- Aide : regarder dans la documentation [`INSERT`](https://mariadb.com/kb/en/insert/), [`UPDATE`](https://mariadb.com/kb/en/update/) et [`DELETE`](https://mariadb.com/kb/en/delete/)
+
+### Exercice n°5.1
+- Créer un nouvel utilisateur dans la table `users`
+- Nommer le pseudonyme de l’utilisateur à `mon_super_pseudonyme`
+- Attribuer le prénom de l’utilisateur à `Epi`
+- Attribuer le nom de l’utilisateur à `Tech`
+- Aide : regarder dans la documentation [`INSERT`](https://mariadb.com/kb/en/insert/)
+
+### Exercice n°5.2
+- Mettre à jour les informations d’un utilisateur dans la table `users`
+- Modifier le pseudonyme du dernier utilisateur ajouté à `LifeIsStrange`
+- Aide : regarder dans la documentation [`UPDATE`](https://mariadb.com/kb/en/update/)
+
+### Exercice n°5.3
+- Supprimer le dernier utilisateur ajouté à la table `users`
+- Aide : regarder dans la documentation [`DELETE`](https://mariadb.com/kb/en/delete/)

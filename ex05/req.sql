@@ -7,9 +7,9 @@ INSERT INTO users
 )
 VALUES
 (
-	'user_x',
-	'my_first_name',
-	'my_last_name'
+	'mon_super_pseudonyme',
+	'Epi',
+	'Tech'
 );
 
 /* STEP 2 - Update the last user */
