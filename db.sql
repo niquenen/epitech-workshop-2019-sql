@@ -1,18 +1,18 @@
 SET SQL_MODE = 'NO_AUTO_VALUE_ON_ZERO';
 SET time_zone = '+00:00';
 
-CREATE DATABASE IF NOT EXISTS `epitech_workshop`
+CREATE DATABASE IF NOT EXISTS epitech_workshop
 	DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-USE `epitech_workshop`;
+USE epitech_workshop;
 
-CREATE TABLE `tasks` (
-	`id` int(11) NOT NULL,
-	`user_id` int(11) NOT NULL,
-	`content` text NOT NULL
+CREATE TABLE tasks (
+	id int(11) NOT NULL,
+	user_id int(11) NOT NULL,
+	content text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `tasks` (`id`, `user_id`, `content`) VALUES
+INSERT INTO tasks (id, user_id, content) VALUES
 (
 	1,
 	1,
@@ -75,14 +75,14 @@ INSERT INTO `tasks` (`id`, `user_id`, `content`) VALUES
 	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit elementum nibh, quis cursus urna volutpat vitae. Fusce eget auctor est, in finibus nulla. Quisque vel augue et ante pharetra dapibus. Pellentesque vel blandit enim, pellentesque dictum nisi. Quisque eros ex, aliquet sed viverra eget, tempus ut velit. Donec ornare tempor mauris interdum lacinia. Sed pharetra, diam nec tristique tempus, massa nisi aliquam lorem, at iaculis risus enim nec leo.'
 );
 
-CREATE TABLE `users` (
-	`id` int(11) NOT NULL,
-	`username` varchar(255) NOT NULL,
-	`first_name` varchar(255) DEFAULT NULL,
-	`last_name` varchar(255) DEFAULT NULL
+CREATE TABLE users (
+	id int(11) NOT NULL,
+	username varchar(255) NOT NULL,
+	first_name varchar(255) DEFAULT NULL,
+	last_name varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `users` (`id`, `username`, `first_name`, `last_name`) VALUES
+INSERT INTO users (id, username, first_name, last_name) VALUES
 (
 	1,
 	'user_1',
@@ -168,14 +168,14 @@ INSERT INTO `users` (`id`, `username`, `first_name`, `last_name`) VALUES
 	NULL
 );
 
-ALTER TABLE `tasks`
-	ADD PRIMARY KEY (`id`);
+ALTER TABLE tasks
+	ADD PRIMARY KEY (id);
 
-ALTER TABLE `users`
-	ADD PRIMARY KEY (`id`);
+ALTER TABLE users
+	ADD PRIMARY KEY (id);
 
-ALTER TABLE `tasks`
-	MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+ALTER TABLE tasks
+	MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
-ALTER TABLE `users`
-	MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+ALTER TABLE users
+	MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
