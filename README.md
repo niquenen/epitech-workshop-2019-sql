@@ -24,7 +24,7 @@ WHERE
 [`SELECT`](https://sql.sh/cours/select) et [`FROM`](https://sql.sh/cours/select) sont des instructions basiques qui permettent de sélectionner des données provenant d’une table. L’instruction [`WHERE`](https://sql.sh/cours/where) permet d’isoler des données lors de l’exécution d’une requête.
 
 ## Exercice n°0
-Avant de commencer les exercices vous pouvez télécharger le projet [depuis la page des versions](https://github.com/niquenen/epitech_workshop_sql/releases/tag/v1.0).
+Avant de commencer les exercices vous pouvez télécharger le projet [depuis la page des versions](https://github.com/niquenen/epitech_workshop_sql/releases/tag/v1.1).
 
 Vous pouvez également utiliser Docker pour créer un conteneur MariaDB.
 Un fichier `docker compose` est disponible à cette adresse :
